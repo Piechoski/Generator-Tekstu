@@ -18,11 +18,15 @@
 </head>
 <body>
 <h1>
-    <a href="https://kamilpheroku.herokuapp.com/"><img id="h1" style="border: none;" src="gfx/lorem_ipsum.png" alt="Lorem Ipsum"></a>
+    <div align="center">
+    <a href="https://kamilpheroku.herokuapp.com/">
+        <img id="h1" style="border: none;" src="gfx/lorem_ipsum.png" alt="GENERATOR TEKSTU"></a>
+    </div>
 </h1>
 <div align="center">
+
 <form action="/generate" th:method="post">
-    <textarea  th:text="${text}" rows="10" cols="30">
+    <textarea  th:text="${text}"  rows="10" cols="30">
 
     </textarea>
     <br>
