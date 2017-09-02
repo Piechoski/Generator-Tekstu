@@ -2,7 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="form2.css">
 </head>
 <body>
 <br />
@@ -10,13 +13,9 @@
 <br />
 <br />
 <br />
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>GENERATOR TEKSTU</title>
-</head>
-<body>
+
+
+
 <h1>
     <div align="center">
     <a href="https://kamilpheroku.herokuapp.com/">
@@ -25,12 +24,16 @@
              class="transparent shrinkToFit" width="800" height="100"></a>
     </div>
 </h1>
+<h2>"Zmień język"</h2>
 <div align="center">
 
 <form action="/generate" th:method="post">
-    <textarea  th:text="${text}"  rows="10" cols="30">
+
+    <textarea  th:text="${text}"  rows="30" cols="50">
 
     </textarea>
+    <br>
+    <br>
     <br>
     <input type="number" value="5" step="1">
 
@@ -40,7 +43,6 @@
         <option value="3">WORDS</option>
     </select>
     <input type="submit" value="GENERATE">
-
 
 
 </form>
