@@ -5,6 +5,7 @@ public interface loremipsum {
     String generateSentences(int numer);
     String generateWords(int number);
     String generateLoremIpsum();
+
 }
 
 
