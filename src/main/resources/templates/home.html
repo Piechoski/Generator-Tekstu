@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,20 @@
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="form2.css">
 </head>
+
 <body>
-<br />
-<br />
-<br />
-<br />
-<br />
-
-
-
+<article class = "contact">
 <h1>
-    <div align="center">
+
+
+    <p align="center">
     <a href="https://kamilpheroku.herokuapp.com/">
         <img src="https://s3.amazonaws.com/word-art/59aac5f2f1239c5a860a9a09.png"
              alt="https://s3.amazonaws.com/word-art/59aac5f2f1239c5a860a9a09.png"
-             class="transparent shrinkToFit" width="800" height="100"></a>
-    </div>
+             class="transparent shrinkToFit" width="800" height="100"></a></p>
+
 </h1>
-<h2>"Zmień język"</h2>
+
 <div align="center">
 
 <form action="/generate" th:method="post">
@@ -44,10 +40,11 @@
     </select>
     <input type="submit" value="GENERATE">
 
-
+</p>
 </form>
 </div>
+
+    </article>
 </body>
-</html>
-</body>
+
 </html>
