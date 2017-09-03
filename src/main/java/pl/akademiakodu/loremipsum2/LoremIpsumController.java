@@ -30,5 +30,9 @@ public class LoremIpsumController {
         modelMap.addAttribute("text", "dupa");
         return "home";
     }
-    //@PostMapping()
+    @PostMapping("/")
+    public String cofnij(){
+        return "home";
+
+    }
 }
