@@ -27,5 +27,11 @@ public class Form {
     public void setOption(int option) {
         this.option = option;
     }
+
+    @Override
+    public String toString() {
+        return number +" " + option ;
+    }
 }
+
 

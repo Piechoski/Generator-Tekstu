@@ -1,14 +1,11 @@
 package pl.akademiakodu.loremipsum2;
 
 
-
-
-
 public class Generator implements loremipsum {
     public final String lorem =" Tornistry moich dzieci ważą tyle jakby były zrobione z betonu." +
-            " Ilość książek, zeszytów ćwiczeń i dziwnego badziewia jest kosmiczna. " +
-            "Przypomniało mi to mój tornister. Książki kupowałem używane." +
-            " Najbardziej lubiałem te po ś.p. Jaśku Trzasce. Jasiek był fajnym chłopakiem, tyle" +
+            " Ilość książek, zeszytów ćwiczeń i dziwnego badziewia jest kosmiczna//. " +
+            "Przypomniało mi to mój tornister//. Książki kupowałem używane." +
+            " Najbardziej lubiałem te po ś.p//. Jaśku Trzasce. Jasiek był fajnym chłopakiem, tyle" +
             " że urodził się w rodzinie meneli. Książki po nim były może i nie do końca czytane" +
             " ale zawsze było w nich pełno ekspresji. Jasiek z pasją dorysowywał wszystkim chuje," +
             " nieważne kobieta, mężczyzna, koń. Pamiętam książkę do historii. Szarża szwoleżerów " +
@@ -30,19 +27,34 @@ public class Generator implements loremipsum {
     }
 
     @Override
-    public String generateSentences(int numer) {
-        return null;
+    public String generateSentences(int number) {
+        StringBuilder sentenseString = new StringBuilder("");
+        String sentences[] = lorem.split("//.");
+        for (int i = 0;i< number;i++) {
+            sentenseString.append(sentences[i] + "//.");
+        }
+        return sentenseString.toString();
+
+
+
     }
 
     @Override
     public String generateWords(int number) {
-        return null;
+        StringBuilder wordString = new StringBuilder("");
+        String word [] = lorem.split(" ");
+        for (int i=0;i<number;i++){
+          wordString.append(word[i]+" ")  ;
+
+        }
+        return wordString.toString();
     }
 
     @Override
     public String generateLoremIpsum() {
         return null;
     }
+
 }
 
 
