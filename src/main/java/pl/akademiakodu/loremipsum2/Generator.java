@@ -28,12 +28,12 @@ public class Generator implements loremipsum {
 
     @Override
     public String generateSentences(int number) {
-        StringBuilder sentenseString = new StringBuilder("");
+        StringBuilder sentenceString = new StringBuilder("");
         String sentences[] = lorem.split("//.");
-        for (int i = 0;i< number;i++) {
-            sentenseString.append(sentences[i] + "//.");
+        for (int i = 0;i<= number;i++) {
+            sentenceString.append(sentences[i]+ "//.");
         }
-        return sentenseString.toString();
+        return sentenceString.toString();
 
 
 
@@ -43,18 +43,24 @@ public class Generator implements loremipsum {
     public String generateWords(int number) {
         StringBuilder wordString = new StringBuilder("");
         String word [] = lorem.split(" ");
-        for (int i=0;i<number;i++){
-          wordString.append(word[i]+" ")  ;
+        for (int i=0;i<=number;i++){
+          wordString.append(word[i]+" ");
 
         }
         return wordString.toString();
     }
+    public String resetAll(int number){
+        StringBuilder allString = new StringBuilder("");
+        String[] all;
+        all = lorem.length("")
 
-    @Override
-    public String generateLoremIpsum() {
-        return null;
+
     }
 
-}
+    }
+
+    }
+
+
 
 

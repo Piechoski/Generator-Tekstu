@@ -67,5 +67,11 @@ public class LoremIpsumController {
         return "home";
 
     }
+    @PostMapping("/")
+    public String reset(@ModelAttribute Form form, ModelMap modelMap)
+    {
+        modelMap.addAttribute("lorem","lorem");
+        return null;
+    }
 
 }
